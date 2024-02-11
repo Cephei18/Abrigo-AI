@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>exams.com</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Patua+One&display=swap" rel="stylesheet">
+
+    <style>
+        .quick-links{
+            
+            color: rgb(0, 0, 0);
+            border: solid;
+            height: 100px;
+            width: 600px;
+            background: linear-gradient(-45deg, #25207d, #24c2f7);
+            margin-top: 80px;
+            margin-bottom: 35px;
+            font-size: 39px;
+            font-family: andika;
+            cursor: pointer;
+            margin-left: 40px;
+           
+            justify-content: center;
+            display: inline-block;
+            align-items: center;
+            transition: opacity 0.3s;
+            background-color: 1s;
+            transition: 0.5s;
+        }
+        .quick-links:hover{
+            transform: scale(1.15);
+        }
+        body {
+            /* background: (circle, #2b4f81, #090909); */
+            align-items: center;
+        background: linear-gradient(-45deg, #0e0c35, #0f1dae, #180a57, #04000f, #0b0911, #0806549f, #111590);
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+        .button-4,
+        .button-3,
+        .button-2{
+            display: inline-block;
+            height: 80px;
+            width: 800px;
+            background-color: rgb(28, 30, 51);
+            color: rgb(255, 254, 254);
+            margin-top: 35px;
+            font-size: 30px;
+            
+            font-family: andika;
+            transition: 0.5s ;
+
+        }
+        .button-4,
+        .button-3{
+            height: 150px;
+            margin-top: 45px;
+        }
+        .button-4:hover,
+        .button-3:hover,
+        .button-2:hover{
+            transform: scale(1.15);
+
+        }
+        .head {
+            text-align: left;
+            font-size: 50px;
+            margin-left: 20px;
+            margin-top: 40px;
+            color: rgba(223, 246, 243, 0.704);
+        }
+
+        .sc {
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+        
+        .sc::-webkit-scrollbar {
+            display: none;
+            overflow-x: hidden;
+        }
+        .remaining-exam{
+            align-items: center;
+            justify-content: center;
+            margin-left: 250px;
+        }
+        p {
+            text-align: center;
+            display: block;
+            font-family: Patua One;
+
+            font-weight: 400px;
+            font-size: 40px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        .law,
+        .medical,
+        .engg {
+            display: inline-block;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(201, 142, 201);
+            align-content: center;
+            border-radius: 15px;
+            margin-left: 40px;
+            margin-right: 20px;
+            margin-top: 60px;
+            white-space: wrap;
+            margin-bottom: 30px;
+            transition: transform 0.4s;
+            padding-top: 15px;
+        }
+
+        .medical {
+            background-color: rgb(86, 129, 139);
+        }
+
+        .law{
+            background-color: rgb(74, 72, 119);
+        }
+        .button {
+            background-color: rgb(5, 5, 5);
+            color: rgb(218, 227, 232);
+            border: solid;
+            height: 60px;
+            width: 220px;
+            border-radius: 12px;
+            margin-bottom: 35px;
+            font-size: 30px;
+            font-family: andika;
+            cursor: pointer;
+            margin-left: 40px;
+            justify-content: center;
+            display: inline-block;
+            align-items: center;
+            transition: opacity 0.3s;
+            background-color: 1s;
+            transition: 0.5s;
+        }
+        .extra-2,
+        .extra-1,
+        .extra{
+            display: inline-block;
+            height: 820px;
+            width: 1000px;
+            background-color: rgb(225, 152, 225);
+            align-content: center;
+            border-radius: 15px;
+            justify-content: center;
+            margin-top: 100px;
+            transition: 0.7s;
+            padding-top: 30px;
+        }
+
+        .extra-2{
+            height:1300px ;
+            margin-bottom: 100px;
+            margin-top: 150px;
+        }
+        .extra-1{
+            height:700px ;
+            margin-top: 150px;
+        }
+        .extra-2:hover,
+        .extra-1:hover,
+        .extra:hover{
+            transform: scale(1.15);
+        }
+        .button:hover {
+            opacity: 0.7;
+            transform: scale(1.15);
+
+        }
+
+        ul{
+            font-family:Cambria ;
+            font-size: 25px;
+            line-height: 40px ;
+        }
+
+        .button:active {
+            background-color: rgb(153, 222, 203);
+        }
+        .law:hover{
+            transform: scale(1.18);
+        }
+        .engg:hover {
+            transform: scale(1.18);
+        }
+        .medical:hover {
+            transform: scale(1.18);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="sc">
+            <p class="head">1. <u>Engineering</u></p>
+            <div class="engg">
+                <p>JEE MAIN</p><br>
+                <button onclick="Open1()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open1() {
+                        window.open("https://jeemain.nta.ac.in/", "_blank");
+                    }
+                </script>
+                <button onclick="OpenBOT1()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function OpenBOT1() {
+                        window.open("https://t.me/The_IIT_JEE_Bot", "_blank");
+                    }
+                </script>
+
+
+
+            </div>
+            <div class="engg">
+                <p>JEE ADVANCED</p><br>
+                <button onclick="Open2()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open2() {
+                        window.open("http://jeeadv.ac.in/ ", "_blank");
+                    }
+                </script>
+                <button onclick="OpenBOT2()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function OpenBOT2() {
+                        window.open("https://t.me/The_IIT_JEE_Bot", "_blank");
+                    }
+                </script>
+
+            </div>
+            <div class="engg">
+                <p>BITSAT</p><br>
+                <button onclick="Open3()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open3() {
+                        window.open("https://www.bitsadmission.com/", "_blank");
+                    }
+                </script>
+                <button onclick="OpenBOT3()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function OpenBOT3() {
+                        window.open("https://t.me/mathongo_bitsat", "_blank");
+                    }
+                </script>
+
+            </div>
+            <div class="engg">
+                <p>VITEEE </p><br>
+                <button onclick="Open4()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open4() {
+                        window.open("https://viteee.vit.ac.in/", "_blank");
+                    }
+                </script>
+
+                <button onclick="OpenBOT4()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function OpenBOT4() {
+                        window.open("https://t.me/vitap_viteee_bot", "_blank");
+                    }
+                </script>
+
+            </div>
+            <div class="engg">
+                <p>SRMJEEE</p><br>
+                <button onclick="Open5()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open5() {
+                        window.open("https://www.srmist.edu.in/admission-india/", "_blank");
+                    }
+                </script>
+                <button onclick="OpenBOT5()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function OpenBOT5() {
+                        window.open("https://t.me/srmjee23", "_blank");
+                    }
+                </script>
+            </div>
+            <div class="engg">
+                <p>MET</p><br>
+                <button onclick="Open6()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open6() {
+                        window.open("https://manipal.edu/mu/admission/indian-students/online-entrance-exam.html", "_blank");
+                    }
+                </script>
+                <button onclick="OpenBOT6()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function OpenBOT6() {
+                        window.open("https://www.manipal.edu/mu.html", "_blank");
+                    }
+                </script>
+            </div>
+            <div class="engg">
+                <p>KIITEE</p><br>
+                <button onclick="Open7()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open7() {
+                        window.open("https://kiitee.kiit.ac.in/", "_blank");
+                    }
+                </script>
+                <button onclick="OpenBOT7()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function OpenBOT7() {
+                        window.open("https://t.me/KIITEE2022", "_blank");
+                    }
+                </script>
+            </div>
+            <div class="engg">
+                <p>WBJEE</p><br>
+                <button onclick="Open8()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open8() {
+                        window.open("https://wbjeeb.nic.in/", "_blank");
+                    }
+                </script>
+                <button onclick="OpenBOT8()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function OpenBOT8() {
+                        window.open("https://t.me/WBJEE_2024_Preparation", "_blank");
+                    }
+                </script>
+            </div>
+            <div class="engg">
+                <p>MHT CET</p><br>
+                <button onclick="Open9()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open9() {
+                        window.open("http://cetcell.mahacet.org/", "_blank");
+                    }
+                </script>
+                <button onclick="OpenBOT9()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function OpenBOT9() {
+                        window.open("https://t.me/MHTCET_MHT_CET_NOTES", "_blank");
+                    }
+                </script>
+            </div>
+            <div class="engg">
+                <p>COMEDK UGET</p><br>
+                <button onclick="Open9()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open9() {
+                        window.open("https://www.comedk.org/", "_blank");
+                    }
+                </script>
+                <button onclick="OpenBOT9()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function OpenBOT9() {
+                        window.open("https://t.me/comedkexam", "_blank");
+                    }
+                </script>
+
+            </div>
+
+            
+        </div>
+        <button onclick="Open__1()" class="quick-links" style="vertical-align:middle"><span>QUICK LINKS</span></button>
+
+
+<script>
+    function Open__1() {
+        window.open("engineering.html", "_blank");
+    }
+</script>
+        <div class="sc">
+            <p class="head">2. <u>Medical</u></p>
+            <div class="medical">
+                <p>NEET-UG </p><br>
+                <button onclick="Open_1()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open_1() {
+                        window.open("https://neet.nta.nic.in/", "_blank");
+                    }
+                </script>
+                <button onclick="Open_BOT1()" class="button"
+                    style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function Open_BOT1() {
+                        window.open("https://t.me/TUSHAR0143_bot", "_blank");
+                    }
+                </script>
+
+
+
+            </div>        
+            <div class="medical">
+                <p>INICET</p><br>
+                <button onclick="Open_2()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open_2() {
+                        window.open("https://www.aiimsexams.ac.in/", "_blank");
+                    }
+                </script>
+                <button onclick="Open_BOT2()" class="button" style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function Open_BOT2() {
+                        window.open("https://t.me/inicet", "_blank");
+                    }
+                </script>
+                
+            </div>
+            <div class="medical">
+                <p>AIAPGET </p><br>
+                <button onclick="Open_3()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open_3() {
+                        window.open("https://aiapget.nta.nic.in/", "_blank");
+                    }
+                </script>
+
+                <button onclick="Open_BOT3()" class="button" style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function Open_BOT3() {
+                        window.open("https://t.me/aim_for_aiapget24", "_blank");
+                    }
+                </script>
+                
+            </div>
+            <div class="medical">
+                <p>JIPMER 
+                </p><br>
+                <button onclick="Open_4()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open_4() {
+                        window.open("https://main.jipmer.edu.in/", "_blank");
+                    }
+                </script>
+                <button onclick="Open_BOT4()" class="button" style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function Open_BOT4() {
+                        window.open("https://t.me/nimhans1", "_blank");
+                    }
+                </script>
+                
+            </div>
+            <div class="medical">
+                <p>NEET SS </p><br>
+                <button onclick="Open_5()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function Open5() {
+                        window.open("https://nbe.edu.in/", "_blank");
+                    }
+                </script>
+                <button onclick="Open_BOT5()" class="button" style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function Open_BOT5() {
+                        window.open("https://t.me/Neet_SS", "_blank");
+                    }
+                </script>
+                
+            </div>
+        </div>
+        <button onclick="Open__2()" class="quick-links" style="vertical-align:middle"><span>QUICK LINKS</span></button>
+
+
+        <script>
+            function Open__2() {
+                window.open("medical.html", "_blank");
+            }
+        </script>
+        <div class="sc">
+            <p class="head">3. <u>LAW</u></p>
+            <div class="law">
+                
+                <p> CLAT</p><br>
+                <button onclick="LAW1()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function LAW1() {
+                        window.open("https://consortiumofnlus.ac.in/", "_blank");
+                    }
+                </script>
+                <button onclick="LAWbot1()" class="button" style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function LAWbot1() {
+                        window.open("https://t.me/AIBE_Law_Judicial_CLAT_Exam_PDF", "_blank");
+                    }
+                </script>
+                
+            </div>
+            <div class="law">
+                <p>AILET</p><br>
+                <button onclick="LAW2()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function LAW2() {
+                        window.open("http://nludelhi.ac.in/", "_blank");
+                    }
+                </script>
+
+                <button onclick="LAWbot2()" class="button" style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function LAWbot2() {
+                        window.open("https://t.me/WeGoNlu", "_blank");
+                    }
+                </script>
+                
+            </div>
+            <div class="law">
+                <p>LSAT India</p><br>
+                <button onclick="LAW3()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function LAW3() {
+                        window.open("https://www.discoverlaw.in/", "_blank");
+                    }
+                </script>
+                <button onclick="LAWbot3()" class="button" style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function LAWbot3() {
+                        window.open("https://t.me/law_exam_clat_legal_lsat_pdf", "_blank");
+                    }
+                </script>
+                
+            </div>
+            <div class="law">
+                <p>SLAT</p><br>
+                <button onclick="LAW4()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function LAW4() {
+                        window.open("https://www.set-test.org/", "_blank");
+                    }
+                </script>
+                <button onclick="LAWbot4()" class="button" style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function LAWbot4() {
+                        window.open("https://t.me/slatexamgroupcmp", "_blank");
+                    }
+                </script>
+                
+            </div>
+            <div class="law">
+                <p> MHCET Law </p><br>
+                <button onclick="LAW5()" class="button" style="vertical-align:middle"><span>ABOUT</span></button>
+                <script>
+                    function LAW5() {
+                        window.open("http://cetcell.mahacet.org/", "_blank");
+                    }
+                </script>
+                <button onclick="LAWbot5()" class="button" style="vertical-align:middle"><span>RESOURCES</span></button>
+                <script>
+                    function LAWbot5() {
+                        window.open("https://t.me/mhcetentrance", "_blank");
+                    }
+                </script>
+                
+            </div>
+        </div>
+        <button onclick="Open__3()" class="quick-links" style="vertical-align:middle"><span>QUICK LINKS</span></button>
+
+
+        <script>
+            function Open__3() {
+                window.open("law.html", "_blank");
+            }
+        </script>
+        <div class="remaining-exam">
+            <div class="extra">
+                <p>
+                    4. Some RAILWAY Exams
+                </p>
+                <p class="others">
+                    <button onclick="RLW1()" class="button-2" style="vertical-align:middle"><span>RRB Group D</span></button>
+                <script>
+                    function RLW1() {
+                        window.open("https://www.rrbcdg.gov.in/", "_blank");
+                    }
+                </script>
+                <button onclick="RLW2()" class="button-2" style="vertical-align:middle"><span>RPF Constable Exam</span></button>
+                <script>
+                    function RLW2() {
+                        window.open("https://constable.rpfonlinereg.org/", "_blank");
+                    }
+                </script>
+                <button onclick="RLW3()" class="button-2" style="vertical-align:middle"><span>RRB ALP (Assistant Loco Pilot)</span></button>
+                <script>
+                    function RLW3() {
+                        window.open("https://www.rrcb.gov.in/", "_blank");
+                    }
+                </script>
+                <button onclick="RLW4()" class="button-2" style="vertical-align:middle"><span>RPF SI (Sub Inspector) Exam</span></button>
+                <script>
+                    function RLW4() {
+                        window.open("https://si.rpfonlinereg.org/", "_blank");
+                    }
+                </script>
+                <button onclick="RLW5()" class="button-2" style="vertical-align:middle"><span>RRB JE (Junior Engineer) Exam</span></button>
+                <script>
+                    function RLW5() {
+                        window.open("https://rrbonlinereg.co.in/", "_blank");
+                    }
+                </script>
+                <button onclick="RLW6()" class="button-2" style="vertical-align:middle"><span>RRB Paramedical Recruitment</span></button>
+                <script>
+                    function RLW6() {
+                        window.open("https://www.rrbchennai.gov.in/", "_blank");
+                    }
+                </script>
+                </p>
+            </div>
+            <div class="extra-1">
+                <p>
+                    5. CIVIL SERVICES
+                </p>
+                <p class="others">
+                    <button onclick="CIVIL1()" class="button-3" style="vertical-align:middle"><span>Union Public Service Commission (UPSC) Civil Services Examination (CSE) and Indian Forest Service Examination (IFoS)
+                    </span></button>
+                <script>
+                    function CIVIL1() {
+                        window.open("https://www.upsc.gov.in", "_blank");
+                    }
+                </script>
+                <button onclick="CIVIL2()" class="button-3" style="vertical-align:middle"><span>Staff Selection Commission (SSC) Combined Graduate Level Examination (CGL)
+                </span></button>
+                <script>
+                    function CIVIL2() {
+                        window.open("https://ssc.nic.in", "_blank");
+                    }
+                </script>
+                <button onclick="CIVIL3()" class="button-3" style="vertical-align:middle"><span>SSC Combined Higher Secondary Level (CHSL)
+                </span></button>
+                <script>
+                    function CIVIL3() {
+                        window.open("https://ssc.nic.in", "_blank");
+                    }
+                </script>
+                
+                </p>
+            </div>
+            <div class="extra-2">
+                <p>
+                    6. Some School level exams
+                </p>
+                <p class="others">
+                    <button onclick="matric1()" class="button-4" style="vertical-align:middle"><span>National Level Science Talent Search Exam (NSTSE)
+                    </span></button>
+                <script>
+                    function matric1() {
+                        window.open("https://www.unifiedcouncil.com/", "_blank");
+                    }
+                </script>
+                <button onclick="matric2()" class="button-4" style="vertical-align:middle"><span>Science Olympiad Foundation (SOF) Exams
+                </span></button>
+                <script>
+                    function matric2() {
+                        window.open("https://sofworld.org/", "_blank");
+                    }
+                </script>
+                <button onclick="matric3()" class="button-4" style="vertical-align:middle"><span>National Interactive Maths Olympiad (NIMO) and National Biotechnology Olympiad (NBO)
+                </span></button>
+                <script>
+                    function matric3() {
+                        window.open("https://www.eduhealfoundation.org/", "_blank");
+                    }
+                </script>
+                <button onclick="matric4()" class="button-4" style="vertical-align:middle"><span>GeoGenius Geography Olympiad
+                </span></button>
+                <script>
+                    function matric4() {
+                        window.open("https://www.geogeniusindia.com/", "_blank");
+                    }
+                </script>
+                <button onclick="matric5()" class="button-4" style="vertical-align:middle"><span>Asset (Assessment of Scholastic Skills through Educational Testing)
+                </span></button>
+                <script>
+                    function matric5() {
+                        window.open("https://www.ei-india.com/asset/", "_blank");
+                    }
+                </script>
+                <button onclick="matric6()" class="button-4" style="vertical-align:middle"><span>Indian National Olympiad (INO)</span></button>
+                <script>
+                    function matric6() {
+                        window.open("https://olympiads.hbcse.tifr.res.in/", "_blank");
+                    }
+                </script>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

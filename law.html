@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Exams</title>
+    <style>
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        body {
+            /* Updated to implement an animated gradient background */
+            background: linear-gradient(-45deg, #2350c3, #1e46a1, #162f7b, #2350c3);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #000000; /* Inner box background color */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            color: #FFFFFF; /* Ensures text is readable against the gradient */
+            border: 2px solid #FFFFFF;
+        }
+        h1, h2 {
+            color: #FFFFFF;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #7acbd4;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LAW EXAMS</h1>
+        <h2>CLAT (COMMON LAW ADMISSION TEST)</h2>
+        <ul>
+            <li><a href="">Legal reasoning</a></li>
+            <li><a href="">Logical reasoning</a></li>
+            <li><a href="">English</a></li>
+        </ul>
+        <h2>AILET (ALL INDIA LAW ENTRANCE TEST)</h2>
+        <ul>
+            <li><a href="">Logical reasoning</a></li>
+            <li><a href="">English</a></li>
+        </ul>
+        <h2>MHCET LAW</h2>
+        <ul>
+            <li><a href="">English</a></li>
+            <li><a href="">Full revision</a></li>
+        </ul>
+    </div>
+    </body>
+    </html>
